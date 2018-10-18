@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import com.alibaba.fastjson.JSON;
 import entity.Person;
 
 public class GetPersonInfo {
@@ -49,8 +50,14 @@ public static void main(String[] args) {
 //});
     //不加{}表示接口函数返回值    ...
     //加{}表示接口函数中的代码语句  return...
-       List<Person> result=gpi.getPerson((Person person)->
-       person.getSalary()>6000);
+
+    //person为参数，可以不做声明
+       List<Person> result=gpi.getPerson(person->
+       person.getSalary()>8000);
+       for(Person person : result){
+           System.out.println(person);
+       }
+
        //Comparator 为函数式接口，用lambda表达式调用Comparator
 //  Collections.sort(result,(Person p1,Person p2)->{return p1.getSalary()-p2.getSalary();});
    //Collections.sort(result,Comparator.comparing((Person p)->p.getSalary()));
@@ -71,7 +78,7 @@ public static void main(String[] args) {
 
  //排序
 //  persons.stream().sorted((Person p1,Person p2)-> p1.getAge()-p2.getAge()).forEach((Person p)->System.out.println(p));
- persons.stream().forEach((Person p)->{System.out.println(p);});
+// persons.stream().forEach((Person p)->{System.out.println(p);});
  System.out.println("--------------------");
 ////截取limit
 // persons.stream().limit(3).forEach((Person p)->{System.out.println(p);});

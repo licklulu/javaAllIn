@@ -20,7 +20,7 @@ public class JdbcSimpleFacadeUtil {
             conn = pool.createConnection();
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
-            crs = new com.sun.rowset.CachedRowSetImpl();
+//            crs = new com.sun.rowset.CachedRowSetImpl();
             crs.populate(rs);
         } catch (SQLException e) {
             throw new RuntimeException(e);

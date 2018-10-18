@@ -12,6 +12,7 @@ System.out.println(n+" from "+source+" to "+target);
 print(n-1,helper,source,target);
 }
     public static void main(String[] args) {
-        print(4,"A","B","c");
+        Long str = Long.parseLong("3600000L");
+        System.out.println();
     }
 }
