@@ -1,6 +1,6 @@
 package designpatterns.adapter;
 
-public class Adapter extends PS2 implements Target{
+public class AdapterClass extends PS2 implements Target{
     public void connet(String arg) {
         super.connect(arg);//PS2能够实现USB的功能
     }
