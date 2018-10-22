@@ -1,7 +1,7 @@
 package designpatterns.proxy;
 
 /**
- * @Auther: licklulu
+ * @Auther: lick
  * @Description:
  * @Date: 2018/10/18 18:43
  */

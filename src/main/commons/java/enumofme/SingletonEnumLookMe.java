@@ -1,7 +1,7 @@
 package enumofme;
 
 /**
- * @Auther: licklulu
+ * @Auther: lick
  * @Description:
  * @Date: 2018/10/19 15:40
  */

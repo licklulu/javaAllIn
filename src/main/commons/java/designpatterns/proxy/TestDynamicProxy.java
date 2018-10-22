@@ -3,7 +3,7 @@ package designpatterns.proxy;
 import java.lang.reflect.Proxy;
 
 /**
- * @Auther: licklulu
+ * @Auther: lick
  * @Description:only satisfy interfaces
  * @Date: 2018/10/18 18:48
  */

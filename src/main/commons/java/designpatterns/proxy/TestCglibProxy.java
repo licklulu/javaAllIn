@@ -3,7 +3,7 @@ package designpatterns.proxy;
 import net.sf.cglib.proxy.Enhancer;
 
 /**
- * @Auther: licklulu
+ * @Auther: lick
  * @Description:
  * @Date: 2018/10/19 16:53
  */
