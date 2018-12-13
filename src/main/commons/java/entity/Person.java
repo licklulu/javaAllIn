@@ -2,7 +2,7 @@ package entity;
 
 
 
-public class Person  {
+public class Person {
 private String name;
 private int age;
 private boolean isFamousUniversity;
@@ -42,6 +42,9 @@ public void setSalary(int salary) {
 public String toString() {
     return "Person [name=" + name + ", age=" + age + ", isFamousUniversity=" + isFamousUniversity + ", salary=" + salary
             + "]";
+}
+public static Person getPerson(String name, int age, boolean isFamousUniversity, int salary){
+    return new Person(name, age, isFamousUniversity, salary);
 }
 //@Override
 //public int compareTo(Person o) {
