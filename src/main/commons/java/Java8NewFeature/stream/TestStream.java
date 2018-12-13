@@ -37,13 +37,7 @@ public class TestStream {
         map.put(2, "栗子");
         map.put(3, "柿子");
 
-            //对map类型操作
-        Map map1 = map.entrySet().stream()
-                .filter((e) -> e.getValue() == "桃子")
-                .collect(Collectors.toMap(
-                        (e) -> (String) e.getKey(),
-                        (e) -> e.getValue()
-                ));
-    }
+
+
     }
 }
